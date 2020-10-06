@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SkillFactory - A5.15 Практическое задание - Riaba</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="col col-sm-12">
+                <h4>Сказка про курочку Рябу</h4>
+            </div>
+            <div class="col col-sm-12">
+                <h6>Нажав на кнопку "Create text" внизу и выведите на экран текст сказки с пропущенными словами или фразами в {...}. Ваша задача - ввести пропущенные слова и фразы в Var и Speache.</br>Чтобы увидеть как Вы справились, нажмите кнопку "Replace" снизу текста справа.</br>Успехов!</h6>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 mr-auto ml-auto input-container">
+                    <form action="" method="">
+                        <div class="form-row">
+<!----- Word/Frase1 --------Word/Frase1----------Word/Frase1------------Word/Frase1------------>
+                            <div class="form-group col-sm-3">
+                                <label class="form-header" for="var1">Var1:</label>
+                                <input id="var1" class="form-control form-control-sm input-style" type="text" minlength="3" maxlength="3" placeholder="Input your variant" name="var1" required>
+                            </div>
+<!----- Word/Frase2 --------Word/Frase2----------Word/Frase2------------Word/Frase2------------>
+                      <div class="form-group col-sm-3">
+                        <label class="form-header" for="var2">Var2:</label>
+                        <input id="var2" class="form-control form-control-sm input-style" type="text" minlength="4" maxlength="4" placeholder="Input your variant" name="var2" required>
+                    </div>
+<!----- Word/Frase3--------Word/Frase3----------Word/Frase3------------Word/Frase3------------>
+                    <div class="form-group col-sm-3">
+                        <label class="form-header" for="var3">Var3:</label>
+                        <input id="var3" class="form-control form-control-sm input-style" type="text" minlength="12" maxlength="12" placeholder="Input your variant" name="var3" required>
+                    </div>
+<!----- Word/Frase4 --------Word/Frase4----------Word/Frase4------------Word/Frase4------------>   
+                    <div class="form-group col-sm-3">
+                        <label class="form-header" for="var4">Var4:</label>
+                        <input id="var4" class="form-control form-control-sm input-style" type="text" minlength="5" maxlength="5" placeholder="Input your variant" name="var4" required>
+                    </div>
+                </div>
+                    <div class="form-row justify-content-center">
+<!----- Word/Frase5 --------Word/Frase5----------Word/Frase5------------Word/Frase5------------>
+                    <div class="form-group col-sm-4">
+                        <label class="form-header" for="var5">Var5:</label>
+                        <input id="var5" class="form-control form-control-sm input-style" type="text" minlength="5" maxlength="5" placeholder="Input your variant" name="var5" required>
+                    </div>
+<!----- Word/Frase6 --------Word/Frase6----------Word/Frase6------------Word/Frase6------------>
+                    <div class="form-group col-sm-4">
+                        <label class="form-header" for="var6">Var6:</label>
+                        <input id="var6" class="form-control form-control-sm input-style" type="text" minlength="9" maxlength="9" placeholder="Input your variant" name="var6" required>
+                    </div>
+<!----- Word/Frase7 --------Word/Frase7----------Word/Frase7------------Word/Frase7------------>
+                    <div class="form-group col-sm-4">
+                        <label class="form-header" for="var7">Speach:</label>
+                        <input id="var7" class="form-control form-control-sm input-style" type="text" minlength="71" maxlength="71" placeholder="Input your variant" name="var7" required>
+                    </div>
+                </div>
+            </form>
+<!---//////\--- Message container (Reserved) \\\\\\\\\\------->
+            <div class="col-sm-10 mr-auto ml-auto"></div>
+            <!---///////--- Row ---\\\\\\\\--->
+            <div class="row">
+                <div class="col-sm-10 mr-auto ml-auto line-style"></div>
+<!---///////--- Toggle Text Container ---\\\\\\\\--->
+                      <div id="toggle" class="col-sm-10 mr-auto ml-auto text-container"></div>
+<!---///////--- Create text and Insert Variables ---\\\\\\\\--->
+                  </div>
+                <div class="row justify-content-around">
+                    <div class="col-sm-3">
+                      <button id="create" type="button" class="btn btn btn-outline-secondary button-restyle font-restyle" data-toggle="button" aria-pressed="false" autocomplete="off">Сreate text</button>
+                    </div>
+                    <div class="col-sm-3">
+                      <button id="insert" type="button" class="btn btn btn-outline-secondary button-restyle font-restyle" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="alert( 'Убедитесь, что Вы ввели 7 необходимых слов или фраз. Напоминаем, что {SPEACH} - это ответ курочки Рябы, т.е. фраза, фразой могут быть и другие переменные, например, курочка Ряба в {VAR3}. Готовы увидеть результат? Смело жмите [Replace]!')">Replace</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+         <script src="js/gettext.js"></script>  
+    </body>
+</html>
